@@ -38,8 +38,8 @@
 >
 
     {#if (isInView)}
-        <div class="hero-content flex-row">
-            <div class="lg:text-left text-center w-1/2 flex-col">
+        <div class="hero-content lg:flex-row flex-col">
+            <div class="lg:text-left text-center lg:w-1/2 w-2/3 flex-col">
                 <h1 transition:fade={{ duration: 500 }} class="lg:text-5xl text-3xl font-bold">
                     Les <span class="text-primary">technologies</span> que je connais
                 </h1>
@@ -49,10 +49,10 @@
                     <i class=""></i>
                 </p>
             </div>
-            <div class="flex flex-row flex-wrap justify-center align-middle w-1/3">
+            <div class="flex flex-row flex-wrap justify-center align-middle lg:w-1/3 w-1/2">
                 {#each technologies as { alt, icon }, i}
                     <div class="tooltip tooltip-primary" data-tip={alt}>
-                        <i {alt} class="text-7xl {icon}" transition:fly={{ duration: 500, y: 10, delay: i * 100 + 200 }}></i>
+                        <i {alt} class="lg:text-7xl text-5xl {icon}" transition:fly={{ duration: 500, y: 10, delay: i * 100 + 200 }}></i>
                     </div>
                 {/each}
             </div>
