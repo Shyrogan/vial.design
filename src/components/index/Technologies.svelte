@@ -45,7 +45,7 @@
                 </h1>
                 <p  transition:fly={{ duration: 500, x: -10, delay: 200 }} class="lg:text-2xl text-lg font-medium lg:my-3">
                     Ayant commencé dès l'âge de <span class="font-bold text-secondary">15 ans</span> la programmation, j'ai de nombreux projets à mon actif.
-                    Cela m'a permis d'apprendre de nombreuses technologies aussi bien récente qu'ancienne.
+                    Cela m'a permis d'apprendre de nombreuses technologies aussi bien récentes qu'anciennes.
                     <i class=""></i>
                 </p>
             </div>
