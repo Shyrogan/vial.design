@@ -26,7 +26,7 @@
 
                 <a  transition:fly={{ duration: 500, x: -10, delay: 600 }} href="#about-me" class="btn btn-primary lg:inline-flex my-10 hidden">Plus d'information</a>
             </div>
-            <img transition:fly={{ duration: 500, x: 20 }} class="md:mx-10 md:my-0 lg:w-5/12 md:w-1/2 w-2/3 lg:my-6 my-3" src="/design.svg" alt="Web designer" />
+            <img transition:fly={{ duration: 500, x: 20 }} class="md:mx-10 md:my-0 lg:w-5/12 md:w-1/2 w-2/3 lg:my-6 my-3" src="/img/index/design.svg" alt="Web designer" />
 
             <a href="#about-me" class="btn btn-primary lg:hidden my-10">Plus d'information</a>
         </div>

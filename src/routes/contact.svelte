@@ -21,7 +21,7 @@
 
     {#if (isInView)}
         <div class="hero-content flex-col justify-center align-middle">
-            <img transition:fly={{ duration: 500, x: -20 }} class="w-10/12 md:mx-10" src="/contact.svg" alt="Contact"/>
+            <img transition:fly={{ duration: 500, x: -20 }} class="w-10/12 md:mx-10" src="/img/contact/contact.svg" alt="Contact"/>
             <div class="lg:text-left text-center">
                 <h1 transition:fly={{ duration: 500, x: 10 }} class="lg:text-5xl text-3xl font-bold">Contactons-nous</h1>
             </div>

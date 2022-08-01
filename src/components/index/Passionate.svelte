@@ -27,7 +27,7 @@
                 <p transition:fly={{ duration: 500, x: 10, delay: 200 }} class="lg:text-xl text-lg font-medium lg:mt-6">Bien qu'en train de faire des études en informatique, cela fais des années que je code.</p>
                 <p transition:fly={{ duration: 500, x: 10, delay: 400 }} class="lg:text-xl text-lg font-medium mt-2">Actuellement en 3ème année d'informatique à la <a href="https://umontpellier.fr" class="text-info">Faculté des sciences</a>, je souhaite poursuivre mes études jusqu'en master et travailler dans l'imagerie.</p>
             </div>
-            <img transition:fly={{ duration: 500, x: -20 }} class="w-4/12 md:mx-10" src="/learning.svg" alt="Apprentissage"/>
+            <img transition:fly={{ duration: 500, x: -20 }} class="w-4/12 md:mx-10" src="/img/index/learning.svg" alt="Apprentissage"/>
         </div>
     {/if}
 </div>
