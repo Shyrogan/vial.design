@@ -15,8 +15,10 @@
       @apply mx-2;
 
       a {
+        @apply btn btn-ghost normal-case;
+
         &.active {
-          @apply btn btn-primary normal-case;
+          @apply btn-primary;
         }
       }
     }

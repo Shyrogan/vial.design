@@ -5,21 +5,12 @@
     let isInView: boolean;
 
     const technologies = [
-        { alt: "Java", icon: "devicon-java-plain" },
-        { alt: "Kotlin", icon: "devicon-kotlin-plain" },
-        { alt: "Svelte", icon: "devicon-svelte-plain" },
-
         { alt: "Javascript", icon: "devicon-javascript-plain" },
         { alt: "Typescript", icon: "devicon-typescript-plain" },
         { alt: "HTML 5", icon: "devicon-html5-plain" },
         { alt: "CSS 3", icon: "devicon-css3-plain" },
-
-        { alt: "MySQL", icon: "devicon-mysql-plain" },
-        { alt: "MongoDB", icon: "devicon-mongodb-plain" },
-        { alt: "Git", icon: "devicon-git-plain" },
-
-        { alt: "Debian", icon: "devicon-debian-plain" },
-        { alt: "Docker", icon: "devicon-docker-plain" },
+        { alt: "Svelte", icon: "devicon-svelte-plain" },
+        { alt: "Tailwind", icon: "devicon-tailwindcss-plain" },
     ]
 </script>
 
@@ -41,12 +32,12 @@
         <div class="hero-content lg:flex-row flex-col">
             <div class="lg:text-left text-center lg:w-1/2 w-2/3 flex-col">
                 <h1 transition:fade={{ duration: 500 }} class="lg:text-5xl text-3xl font-bold">
-                    Les <span class="text-primary">technologies</span> que je connais
+                    Des sites à la pointe de la <span class="text-primary">technologie</span>
+                    et <span class="text-accent">sécurisés</span>
                 </h1>
                 <p  transition:fly={{ duration: 500, x: -10, delay: 200 }} class="lg:text-2xl text-lg font-medium lg:my-3">
-                    Ayant commencé dès l'âge de <span class="font-bold text-secondary">15 ans</span> la programmation, j'ai de nombreux projets à mon actif.
-                    Cela m'a permis d'apprendre de nombreuses technologies aussi bien récentes qu'anciennes.
-                    <i class=""></i>
+                    Toutes les technologies que j'utilise sont très récentes. Cela permet aux sites
+                    que je conçois d'être rapide, fiable et moderne.
                 </p>
             </div>
             <div class="flex flex-row flex-wrap justify-center align-middle lg:w-1/3 w-1/2">
