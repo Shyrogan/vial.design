@@ -16,6 +16,7 @@
 
 
 <div
+        id="technologies"
         use:inview={{ rootMargin: '-50%' }}
         on:enter={(event) => {
           const { inView, entry, scrollDirection, observer, node} = event.detail;
@@ -32,8 +33,8 @@
         <div class="hero-content lg:flex-row flex-col">
             <div class="lg:text-left text-center lg:w-1/2 w-2/3 flex-col">
                 <h1 transition:fade={{ duration: 500 }} class="lg:text-5xl text-3xl font-bold">
-                    Des sites à la pointe de la <span class="text-primary">technologie</span>
-                    et <span class="text-accent">sécurisés</span>
+                    Des sites basés sur des technologies <span class="text-primary">avancées</span>
+                    et <span class="text-accent">sécurisées</span>
                 </h1>
                 <p  transition:fly={{ duration: 500, x: -10, delay: 200 }} class="lg:text-2xl text-lg font-medium lg:my-3">
                     Toutes les technologies que j'utilise sont très récentes. Cela permet aux sites

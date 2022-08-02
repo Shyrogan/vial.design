@@ -3,6 +3,7 @@
 
     const links = [
         { href: "/", title: "Accueil" },
+        { href: "/about-me", title: "À propos de moi" },
         { href: "/portfolio", title: "Portfolio" },
         { href: "/contact", title: "Contact" },
     ]
