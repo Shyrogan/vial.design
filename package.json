@@ -20,11 +20,6 @@
   "dependencies": {
     "@solid-primitives/i18n": "^1.2.4",
     "@solidjs/router": "^0.8.2",
-    "@types/dompurify": "^3.0.0",
-    "@types/marked": "^4.0.8",
-    "@types/three": "^0.150.0",
-    "@types/yaml-front-matter": "^4.1.0",
-    "normalize.css": "^8.0.1",
     "remark-frontmatter": "^4.0.1",
     "remark-gfm": "^3.0.1",
     "remark-html": "^15.0.2",
@@ -33,7 +28,6 @@
     "remarked": "^0.1.4",
     "sass": "^1.60.0",
     "solid-js": "^1.6.10",
-    "three": "^0.150.1",
     "unified": "^10.1.2",
     "yaml-front-matter": "^4.1.1"
   }
