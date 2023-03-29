@@ -1,0 +1,36 @@
+div {
+  .loading-screen {
+    @apply fixed flex w-full h-screen justify-center items-center;
+  }
+
+  .loading {
+    width: 80px;
+    @apply flex flex-wrap animate-spin-slow;
+  }
+
+  .loading span {
+    @apply w-8 h-8 m-1 animate-bounce;
+
+    &:nth-child(1) {
+      border-radius: 50% 50% 0 50%;
+      @apply origin-bottom-right bg-zinc-300;
+    }
+
+    &:nth-child(2) {
+      border-radius: 50% 50% 50% 0;
+      animation-duration: 0.5s;
+      @apply origin-bottom-right bg-gray-300;
+    }
+
+    &:nth-child(3) {
+      border-radius: 50% 0 50% 50%;
+      animation-duration: 0.5s;
+      @apply origin-bottom-right bg-zinc-500;
+    }
+
+    &:nth-child(4) {
+      border-radius: 0 50% 50% 50%;
+      @apply origin-bottom-right bg-gray-500;
+    }
+  }
+}

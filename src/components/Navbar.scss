@@ -1,0 +1,27 @@
+.nav {
+  @apply fixed flex justify-center align-middle items-center
+  w-screen py-4 backdrop-blur-lg;
+
+  .nav-content {
+    @apply flex justify-between align-middle items-center
+    w-2/3;
+
+    .nav-begin {
+    }
+
+    .nav-center {
+      @apply flex items-center align-middle text-center font-bold tracking-widest;
+
+      .logo {
+        @apply scale-100 hover:scale-110 active:scale-125 opacity-100 transition-all;
+
+        &.animated {
+          @apply opacity-0;
+        }
+      }
+    }
+
+    .nav-end {
+    }
+  }
+}

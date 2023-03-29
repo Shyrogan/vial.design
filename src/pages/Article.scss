@@ -1,0 +1,54 @@
+.article {
+  @apply flex flex-col w-screen justify-center items-center pt-20;
+
+  .article-content {
+    @apply w-9/12 mb-10;
+
+    .article-meta {
+      @apply mb-8;
+
+      .title {
+        @apply font-extralight text-3xl;
+      }
+
+      .subtitle {
+        @apply font-bold;
+      }
+
+      .date {
+        @apply font-medium text-xs;
+      }
+    }
+
+    .article-markdown {
+      h1 {
+        @apply text-3xl my-3;
+      }
+
+      h2 {
+        @apply text-2xl my-3;
+      }
+
+      h3 {
+        @apply text-xl;
+      }
+
+      p {
+        @apply font-light;
+      }
+
+      pre {
+        @apply my-2 p-3 bg-zinc-100 rounded-lg;
+      }
+
+      ul,
+      ol {
+        @apply ml-3;
+      }
+
+      table {
+        @apply bg-zinc-100 p-4 table-auto border-separate border-spacing-x-2 rounded-lg my-2;
+      }
+    }
+  }
+}
