@@ -2,6 +2,7 @@ import { useParams } from '@solidjs/router'
 import { Component, createResource, Show } from 'solid-js'
 import { pathToArticle } from '../utils/blog/lib'
 import { Article } from '../utils/blog/types'
+import { Meta, Title } from '@solidjs/meta'
 
 import Loader from '../components/Loader'
 
@@ -14,6 +15,12 @@ export const Content: Component<{ article: Article }> = ({ article }) => {
 
   return (
     <>
+      <Title>vial.design — {article.title}</Title>
+      <Meta name="description" content={article.description} />
+      <Meta property="og:title" content={article.title} />
+      <Meta property="og:type" content="website" />
+      <Meta property="og:description" content={article.description} />
+
       <div class="article-meta">
         <h1 class="title">Title: {article.title}</h1>
         <Show when={article.description}>

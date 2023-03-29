@@ -1,6 +1,7 @@
 /* @refresh reload */
 import { Route, Router, Routes } from '@solidjs/router'
 import { render } from 'solid-js/web'
+import { MetaProvider } from '@solidjs/meta'
 
 import Article from './pages/Article'
 import Index from './pages/Index'
@@ -17,14 +18,16 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 
 render(
   () => (
-    <Router>
-      <Routes>
-        <Route path="/" component={Navbar}>
-          <Route path="/" component={Index} />
-          <Route path="/article/:path" component={Article} />
-        </Route>
-      </Routes>
-    </Router>
+    <MetaProvider>
+      <Router>
+        <Routes>
+          <Route path="/" component={Navbar}>
+            <Route path="/" component={Index} />
+            <Route path="/article/:path" component={Article} />
+          </Route>
+        </Routes>
+      </Router>
+    </MetaProvider>
   ),
   root!
 )

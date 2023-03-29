@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@solid-primitives/i18n": "^1.2.4",
+    "@solidjs/meta": "^0.28.2",
     "@solidjs/router": "^0.8.2",
     "remark-frontmatter": "^4.0.1",
     "remark-gfm": "^3.0.1",
