@@ -37,6 +37,10 @@
         @apply font-light;
       }
 
+      a {
+        @apply text-cyan-600 underline underline-offset-4;
+      }
+
       pre {
         @apply my-2 p-3 bg-zinc-100 rounded-lg;
       }
