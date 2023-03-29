@@ -43,9 +43,10 @@ export async function gitToArticle(f: GitFile): Promise<Article> {
 }
 
 export async function fetchArticles(): Promise<Article[]> {
-  return await Promise.all(
+  const r = await Promise.all(
     (await fetchGitFiles())
       .filter((f) => f.name.endsWith('.md'))
       .map(gitToArticle)
   )
+  return r.sort((a1, a2) => a1.date.getTime() - a2.date.getTime())
 }
