@@ -33,7 +33,7 @@ export async function pathToArticle(path: string): Promise<Article> {
     title,
     description,
     authors,
-    date,
+    date: new Date(Date.parse(date)),
     __content: file.value.toString(),
   }
 }

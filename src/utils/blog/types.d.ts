@@ -5,6 +5,6 @@ export interface Article {
   title: string
   description?: string
   authors?: string[]
-  date?: string
+  date?: Date
   __content: string
 }

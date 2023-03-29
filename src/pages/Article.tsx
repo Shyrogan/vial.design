@@ -13,6 +13,8 @@ export const Content: Component<{ article: Article }> = ({ article }) => {
   div.classList.add('article-markdown')
   div.innerHTML = article.__content
 
+  console.log(typeof article.date.getDay())
+
   return (
     <>
       <Title>vial.design — {article.title}</Title>
@@ -27,7 +29,7 @@ export const Content: Component<{ article: Article }> = ({ article }) => {
           <h4 class="subtitle">Description: {article.description}</h4>
         </Show>
         <Show when={article.date}>
-          <h5 class="date">Date: {article.date}</h5>
+          <h5 class="date">Date: {article.date.toLocaleDateString('us')}</h5>
         </Show>
       </div>
 
