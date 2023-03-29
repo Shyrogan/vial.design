@@ -7,6 +7,6 @@ export default defineConfig({
     port: 3000,
   },
   build: {
-    target: 'esnext',
+    ssr: false,
   },
 })

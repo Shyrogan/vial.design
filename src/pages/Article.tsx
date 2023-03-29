@@ -1,6 +1,4 @@
 import { useParams } from '@solidjs/router'
-import { marked } from 'marked'
-import DOMPurify from 'dompurify'
 import { Component, createResource, Show } from 'solid-js'
 import { pathToArticle } from '../utils/blog/lib'
 import { Article } from '../utils/blog/types'
@@ -12,7 +10,7 @@ import './Article.scss'
 export const Content: Component<{ article: Article }> = ({ article }) => {
   const div = document.createElement('div')
   div.classList.add('article-markdown')
-  div.innerHTML = DOMPurify.sanitize(marked.parse(article.__content))
+  div.innerHTML = article.__content
 
   return (
     <>
