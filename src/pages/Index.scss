@@ -1,0 +1,20 @@
+.article-container {
+  @apply flex flex-row flex-wrap gap-4 justify-center align-middle items-center pt-24;
+
+  .article {
+    @apply flex flex-col justify-start items-start align-middle p-4 bg-zinc-100 rounded-lg w-auto
+    shadow-sm;
+
+    .title {
+      @apply text-3xl font-extralight;
+    }
+
+    .description {
+      @apply font-bold mb-4;
+    }
+
+    .date {
+      @apply font-medium text-xs;
+    }
+  }
+}
